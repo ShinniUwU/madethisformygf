@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Water+Brush&display=swap');
+*{
+    
+    box-sizing: border-box;
+    text-decoration: none;
+    color:black;
+    
+}
+
+body {
+       background-image:url("https://i.ibb.co/swK7zPR/istockphoto-1191251531-612x612.jpg"); 
+      background-size: 100%;
+      background-repeat:no-repeat;
+      overflow:hidden;
+}
+
+.container {
+  padding: 200px;
+  margin:200px;
+    height: 200px;
+    position: relative;  
+   
+}
+
+.center {
+ margin: 0;
+position: absolute;
+top: 50%;
+left: 50%;
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+}
+
+.btn-primary {
+    background-color: red;
+    border-color: red;
+}
+
+button.btn.btn-primary {
+   
+    padding: 30px 30px 30px 30px;
+    border-radius:10px;
+    background-color: red;
+    color: white;
+    cursor:pointer;
+    font-family: 'Water Brush', cursive;
+    font-size:50px;
+    border-color: red;
+}
+
+
+.btn.btn-primary:focus {
+    background-color:red;
+    outline-color: none;
+}
+button.btn.btn-primary:first-child:hover{
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+  }
+  button.btn.btn-primary:last-child:hover{
+    background: linear-gradient(90deg, #fa7199, #f5ce62, #e43603, #fa7199);
+    background-size: 400%;
+
+
+}
+
+button.btn.btn-primary:first-child:before,
+button.btn.btn-primary:last-child:before{
+  content: '';
+  position: absolute;
+  background: inherit;
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+  border-radius: 50px;
+  filter: blur(20px);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+button.btn.btn-primary:first-child:hover:before,
+button.btn.btn-primary:last-child:hover:before{
+  opacity: 1;
+  z-index: -1;
+}
+button.btn.btn-primary:hover{
+  z-index: 1;
+  animation: glow 8s linear infinite;
+}
+@keyframes glow {
+  0%{
+    background-position: 0%;
+  }
+  100%{
+    background-position: 400%;
+  }
+}
+h5.modal-title {
+    padding-left: 164px;
+}
+
+
+
+.btn.btn-secondary::after {
+content: "Close";
+}
+.btn.btn-secondary:hover::after {
+ content: "🥺";
+ 
+}
+
