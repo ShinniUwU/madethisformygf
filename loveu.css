@@ -38,21 +38,22 @@ transform: translate(-50%, -50%);
 
 button.btn.btn-primary {
    
-    padding: 30px 30px 30px 30px;
-    border-radius:10px;
-    background-color: red;
-    color: white;
-    cursor:pointer;
-    font-family: 'Water Brush', cursive;
-    font-size:50px;
-    border-color: red;
+
+  transform: translate(-50%, - 50%);
+  width: 200px;
+  height:75px;
+  background:#F8EAE1;
+  border-radius: 75px;
+  line-height: 75px;
+  text-align: center;
+  font-size: 35px;
+  font-family: 'Water Brush', cursive;
+  color:#E41E25;
+  box-shadow: 1px 2px black;
 }
 
 
-.btn.btn-primary:focus {
-    background-color:red;
-    outline-color: none;
-}
+
 button.btn.btn-primary:first-child:hover{
     background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
     background-size: 400%;
@@ -109,3 +110,45 @@ content: "Close";
  
 }
 
+
+
+/* responsive media query start */
+
+
+@media (max-width: 890px) {
+  body{
+    background:  url("https://i.ibb.co/swK7zPR/istockphoto-1191251531-612x612.jpg");
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 100% 120%;
+  background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 690px) {
+  body { 
+    background:  url("https://i.ibb.co/swK7zPR/istockphoto-1191251531-612x612.jpg");
+      -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+   }
+  
+  html{
+    height: 100vh;
+  }
+}
+@media (max-width: 575px) {
+  .modal-body {
+  position: relative;
+  left: 4.6%;
+  }
+}
+@media (max-width: 523px) {
+  .modal-body {
+  position: relative;
+  left: 0.1%;
+  }
+}
